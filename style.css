@@ -88,4 +88,21 @@ button:hover {
  color: var(--Very-dark-cyan);
 }
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+ main {
+  max-width: 80em;
+  display: flex;
+ }
+
+ .row:first-child {
+  border-radius: 0;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+ }
+
+ .row:last-child {
+  border-radius: 0;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+ }
+}
